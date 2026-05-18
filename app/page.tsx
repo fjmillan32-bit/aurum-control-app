@@ -83,8 +83,8 @@ export default function Home() {
     console.log("📍 Corridas de hoy (después de conversión):", corridasHoy.length);
     
     const totalOro = corridasHoy.reduce((sum: number, c: any) => sum + (c.oro_gramos || 0), 0);
-    const eficacias = corridasHoy.map((c: any) => c.eficiencia).filter((e: any) => e !== null);
-    const avgEff = eficacias.length ? eficacias.reduce((a, b) => a + b, 0) / eficacias.length : 0;
+    const eficacias = corridasHoy.map((c: any) => c.eficiencia).filter((e: any): e is number => typeof e === 'number');
+    const avgEff = eficacias.length ? eficacias.reduce((a: number, b: number) => a + b, 0) / eficacias.length : 0;
 
     setStats({
       totalGold: totalOro,
