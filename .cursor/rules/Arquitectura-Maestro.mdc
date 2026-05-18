@@ -1,0 +1,5 @@
+---
+alwaysApply: true
+---
+
+Estoy desarrollando 5 apps (MievoMente, Aurum, Temcontrol, Sipam, SICVS). Stack: Next.js, TypeScript, Tailwind, Supabase. Regla: Prioriza siempre la estructura PWA, el rendimiento y el tipado estricto. Si pregunto por Temcontrol, Sipam o SICVS, ten en cuenta que deben compartir lógica de datos.
